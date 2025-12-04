@@ -2,7 +2,7 @@ from ultralytics import YOLO
 from pathlib import Path
 
 def main():
-    model = YOLO("runs_cards/cards_detector2/weights/best.pt")
+    model = YOLO("runs_cards/cards_detector4/weights/best.pt")
 
     source = "test/images"     # folder or image
 
@@ -12,7 +12,7 @@ def main():
         save=True,
         device=0,
         project="runs_cards",
-        name="predictions",
+        name="predictions_25epochs",
         workers=0
     )
 
