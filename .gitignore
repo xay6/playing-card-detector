@@ -18,8 +18,9 @@ runs-cards/
 # ignore all .pt weight files
 **/weights/*.pt
 
-!runs_cards/cards_detector2/weights/best.pt
-!runs_cards/cards_detector2/weights/last.pt
+# allow trained weights from the latest run
+!runs_cards/cards_detector4/weights/best.pt
+!runs_cards/cards_detector4/weights/last.pt
 
 # Dataset (keep local, don't push)
 dataset/
@@ -50,5 +51,5 @@ desktop.ini
 *.zip
 *.7z
 *.tar
-*.tar.gz
+*.gz
 *.rar
