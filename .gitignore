@@ -8,18 +8,20 @@ __pycache__/
 *.swp
 *.swo
 
-
 # YOLO / Ultralytics Outputs
+
+# ignore all YOLO outputs EXCEPT your trained weights
 runs/
 runs_*
 runs-cards/
-runs_cards/
+
+# ignore all .pt weight files
 **/weights/*.pt
+
 !runs_cards/cards_detector2/weights/best.pt
 !runs_cards/cards_detector2/weights/last.pt
 
-
-# Dataset 
+# Dataset (keep local, don't push)
 dataset/
 train/
 valid/
@@ -30,20 +32,19 @@ test/
 *.bmp
 *.gif
 
-# Keep sample images 
+# keep sample images
 !samples/**
-
 
 # OS / Editor Files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# VSCode settings
+# VSCode Settings
 .vscode/
 *.code-workspace
 
-# temporary files
+# Temporary files
 *.tmp
 *.log
 *.zip
