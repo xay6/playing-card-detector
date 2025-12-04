@@ -1,0 +1,53 @@
+# Python & Virtual Environment
+cards_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.swp
+*.swo
+
+
+# YOLO / Ultralytics Outputs
+runs/
+runs_*
+runs-cards/
+runs_cards/
+**/weights/*.pt
+!runs_cards/cards_detector2/weights/best.pt
+!runs_cards/cards_detector2/weights/last.pt
+
+
+# Dataset 
+dataset/
+train/
+valid/
+test/
+*.jpg
+*.png
+*.jpeg
+*.bmp
+*.gif
+
+# Keep sample images 
+!samples/**
+
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# temporary files
+*.tmp
+*.log
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
